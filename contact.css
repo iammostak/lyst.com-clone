@@ -68,3 +68,10 @@ span:hover {
 #btn:hover {
    border: 3px solid gray;
 }
+#navbar {
+   position: sticky;
+   top: -5%;
+}
+#close {
+   text-decoration: none;
+}
