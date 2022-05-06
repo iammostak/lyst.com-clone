@@ -91,20 +91,22 @@ a {
 #left {
    width: 100%;
    height: 104%;
-   border: 1px solid black;
+   border-right: 1px solid black;
    border-left: none;
    border-top: none;
    padding: 15px 50px 0px 50px;
    overflow-y: scroll;
    scroll-behavior: smooth;
+   position: relative;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px -1px;
 }
 #right {
    width: 20%;
    height: 107%;
    margin: auto;
-   border-bottom: 1px solid;
    padding: 0 10px 0 10px;
-   background: linear-gradient(rgb(181, 181, 223), white);
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px -1px;
+   background: linear-gradient(rgb(199, 199, 232), white, rgb(235, 235, 235));
 }
 #right>div {
    margin-bottom: 25px;
@@ -242,4 +244,92 @@ button:hover {
 }
 #helpDown a:hover {
    text-decoration: underline;
+}
+#c1 {
+   font-size: 26px;
+   height: 29px;
+   position: absolute;
+   left: 10%;
+   top: 405px;
+   padding: 1.3% 2%;
+   border-radius: 50px;
+   border: 1.5px solid;
+   background-color: white;
+}
+#c2 {
+   font-size: 26px;
+   height: 29px;
+   position: absolute;
+   right: 10%;
+   top: 405px;
+   padding: 1.3% 2%;
+   border-radius: 50px;
+   border: 1.5px solid;
+   background-color: white;
+}
+#d1 {
+   font-size: 26px;
+   height: 29px;
+   position: absolute;
+   left: 10%;
+   top: 640px;
+   padding: 1.3% 2%;
+   border-radius: 50px;
+   border: 1.5px solid;
+   background-color: white;
+}
+#d2 {
+   font-size: 26px;
+   height: 29px;
+   position: absolute;
+   right: 10%;
+   top: 640px;
+   padding: 1.3% 2%;
+   border-radius: 50px;
+   border: 1.5px solid;
+   background-color: white;
+}
+#s1 {
+   font-size: 26px;
+   height: 29px;
+   position: absolute;
+   left: 10%;
+   top: 873px;
+   padding: 1.3% 2%;
+   border-radius: 50px;
+   border: 1.5px solid;
+   background-color: white;
+}
+#s2 {
+   font-size: 26px;
+   height: 29px;
+   position: absolute;
+   right: 10%;
+   top: 873px;
+   padding: 1.3% 2%;
+   border-radius: 50px;
+   border: 1.5px solid;
+   background-color: white;
+}
+#sn1 {
+   font-size: 26px;
+   height: 29px;
+   position: absolute;
+   left: 10%;
+   top: 1103px;
+   padding: 1.3% 2%;
+   border-radius: 50px;
+   border: 1.5px solid;
+   background-color: white;
+}
+#sn2 {
+   font-size: 26px;
+   height: 29px;
+   position: absolute;
+   right: 10%;
+   top: 1103px;
+   padding: 1.3% 2%;
+   border-radius: 50px;
+   border: 1.5px solid;
+   background-color: white;
 }
