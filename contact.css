@@ -1,0 +1,26 @@
+#contact {
+   display: flex;
+   border-bottom: 1px solid;
+}
+#lhs {
+   width: 35%;
+}
+#lhs>div {
+   width: 50%;
+   margin-left: 37.5%;
+   padding: 10% 0 0 0;
+   height: 100%;
+}
+#lhs>div>p {
+   font-size: 18px;
+   font-weight: 700;
+   border-top: 3px solid;
+   padding: 3% 0 3% 0;
+}
+#lhs>div>p:last-of-type {
+   border-bottom: 3px solid;
+}
+#rhs {
+   width: 65%;
+   border: 1px solid teal;
+}
