@@ -245,7 +245,7 @@ button:hover {
 #helpDown a:hover {
    text-decoration: underline;
 }
-#c1 {
+.a {
    font-size: 26px;
    height: 29px;
    position: absolute;
@@ -253,83 +253,47 @@ button:hover {
    top: 405px;
    padding: 1.3% 2%;
    border-radius: 50px;
-   border: 1.5px solid;
    background-color: white;
+}
+.b {
+   font-size: 26px;
+   height: 29px;
+   position: absolute;
+   right: 10%;
+   top: 405px;
+   padding: 1.3% 2%;
+   border-radius: 50px;
+   background-color: white;
+}
+#c1 {
+   top: 405px;
+   border: 1.5px solid;
 }
 #c2 {
-   font-size: 26px;
-   height: 29px;
-   position: absolute;
-   right: 10%;
    top: 405px;
-   padding: 1.3% 2%;
-   border-radius: 50px;
    border: 1.5px solid;
-   background-color: white;
 }
 #d1 {
-   font-size: 26px;
-   height: 29px;
-   position: absolute;
-   left: 10%;
    top: 640px;
-   padding: 1.3% 2%;
-   border-radius: 50px;
    border: 1.5px solid;
-   background-color: white;
 }
 #d2 {
-   font-size: 26px;
-   height: 29px;
-   position: absolute;
-   right: 10%;
    top: 640px;
-   padding: 1.3% 2%;
-   border-radius: 50px;
    border: 1.5px solid;
-   background-color: white;
 }
 #s1 {
-   font-size: 26px;
-   height: 29px;
-   position: absolute;
-   left: 10%;
    top: 873px;
-   padding: 1.3% 2%;
-   border-radius: 50px;
    border: 1.5px solid;
-   background-color: white;
 }
 #s2 {
-   font-size: 26px;
-   height: 29px;
-   position: absolute;
-   right: 10%;
    top: 873px;
-   padding: 1.3% 2%;
-   border-radius: 50px;
    border: 1.5px solid;
-   background-color: white;
 }
 #sn1 {
-   font-size: 26px;
-   height: 29px;
-   position: absolute;
-   left: 10%;
    top: 1103px;
-   padding: 1.3% 2%;
-   border-radius: 50px;
    border: 1.5px solid;
-   background-color: white;
 }
 #sn2 {
-   font-size: 26px;
-   height: 29px;
-   position: absolute;
-   right: 10%;
    top: 1103px;
-   padding: 1.3% 2%;
-   border-radius: 50px;
    border: 1.5px solid;
-   background-color: white;
 }
