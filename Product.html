@@ -548,6 +548,103 @@
     color: black;
     }
 
+    /* <!-------------FIRST DIV SHOW MORE---------------------------------------------> */
+
+
+
+
+#last2{
+         display: grid;
+         grid-template-columns: repeat(4,242px);
+         grid-template-rows: repeat(6,450px);    
+     }
+     #last2 >div{
+         border: 1px solid rgb(224, 223, 223);
+         /* margin-left: 100px; */
+     }
+     #last2 >div >img{
+         margin-top: 12px;
+         margin-left: 14px;
+     }
+     #last2>div >img +p{
+        font-size: 14px;
+        margin-top: 10px;
+      margin-left: 20px;  
+    max-width: 135px;
+    min-width: 100px;
+    line-height: 17px;
+    padding-bottom: 4px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: #000;
+    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 15px;
+    margin-right: 29px;
+     }
+     #last2>div >img +p+p{
+        margin-left: 10px; 
+         margin-top: -10px;
+        font-size: 16px;
+        padding: 10px;
+        font-weight: bold;
+        color: #222222;
+        font-family: Helvetica,arial,sans-serif;
+        line-height: 27px;
+     }
+     #last2>div >img +p+p+p{
+        font-size: 14px;
+        margin-left: 10px;
+        color: #aaaaaa;
+        font-family: Helvetica,arial,sans-serif;
+        max-width: 110px;
+        line-height: 20px;
+     }
+     #last2>div >img +p+p+p+p{
+        font-size: 8px;
+         margin-left: 70px;
+         color: #aaaaaa;
+         margin-top: -20px;
+     }
+     #last2>div >img +p+p+p+p+p{
+        margin-top: -15px;
+        margin-left: 80px;
+         font-size: 8px;
+         padding-bottom: 20px;
+     }
+
+     .cartbtn1{
+            margin-top: 20px;
+                width: 200px;
+                padding: 12px;
+                border-width: 1px;
+                font-weight: 550;
+                align-items: center;
+                line-height: 12px;
+                font-size: 18px;
+                text-align: center;
+                cursor: pointer;
+                background-color: #000;
+                border-color: #000;
+            color: white;
+                border: 2px solid black;
+                font-family: "Spartan Bold",Arial,sans-serif;
+                cursor: pointer;
+                margin-left: 20px;
+        }
+
+    .cartbtn1:hover{
+    background-color: #83caca;
+    border-color: #83caca;
+    color: black;
+    }
+
+
+
+
+/* <!-------------LAST DIV SHOW MORE---------------------------------------------> */
+
     </style>
 </head>
     <body>
@@ -918,13 +1015,167 @@
                     </div>
                 </div>
                 <div id="products"></div>
+                <span id="moreCont" hidden>
+                    <div>
+                        
+                        <div id="last2">
+                            
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/mclabels/99ea9870/balenciaga-BLACK-Other-Materials-Sweatshirt.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$12.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/stand-out/de10a698/calvin-klein-Black-Two-Tone-Monogram-T-shirt.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$69.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/stand-out/3f8eecb6/lacoste-RedNavyGreen-Graphic-T-shirt.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$569.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/cettire/f6945a91/balenciaga-Red-Allover-Logo-Knit-Jumper.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$989.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/woodhouseclothing/bb1be6d3/lacoste-Green-Quick-Dry-Swim-Shorts.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$219.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/svmoscow/c80e3405/balenciaga-Black-7-Days-Socks-Pack-In-Black.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$659.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/gilt/919c7ef1/balenciaga-Black-Oversized-T-shirt.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$799.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/saksoff5th/a22438bd/nike-Claret-Geometric-Logo-Fleece-Hoodie.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$679.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/cettire/c527689c/balenciaga-Grey-Bb-Logo-Print-Zip-up-Hoodie.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$459.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/cettire/609fc92d/balenciaga-Black-Logo-Printed-Crewneck-Sweatshirt.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$19.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/scottsmenswear/37652fa5/boss-by-hugo-boss-blue-3-pack-Logo-Short-Sleeve-T-shirt.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$639.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/cettire/d188881d/balenciaga-Multi-Tartan-Jacket.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$69.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/cettire/3374d6b0/balenciaga-Black-Free-Printed-Shirt.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$99.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/cettire/61d552ba/balenciaga-Green-Allover-Logo-Intarsia-Sweater.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$69.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/vitkac/b8766b59/balenciaga-GREY-Denim-Jacket-With-Logo.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$63.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/eraldo/56921f9e/versace-Black-Medusa-logo-Printed-Swim-Shorts.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$569.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/stefaniamode/8605716f/balenciaga-neutrals-Oversized-Logo-print-T-shirt.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$349.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/stefaniamode/f14f48dd/balenciaga-blue-Distressed-Effect-Knitted-Hoodie.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$89.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/cettire/8ec8556c/balenciaga-Blue-Paris-Logo-Print-Denim-Jacket.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$69.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/woodhouseclothing/9fe26463/lacoste-Grey-Live-X-Peanuts-Spilt-Organic-Cotton-Hooded-Sweatshirt.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$599.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/cettire/c703f2bd/balenciaga-Purple-Logo-Detailed-Drawstring-Hoodie.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$499.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/saksoff5th/4103b7df/calvin-klein-Iron-Bomber-Jacket.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$199.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/cettire/b0c15753/balenciaga-Black-Gamer-Short-sleeved-Shirt.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$499.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                            <div>
+                                <img src="https://cdna.lystit.com/200/250/tr/photos/cettire/61173e4b/balenciaga-Yellow-Political-Campaign-T-shirt.jpeg"/>
+                                <p>Abstract Element Pattern Printed Shirts</p>
+                                <p>$699.00</p>
+                                <button class="cartbtn1">ADD TO BASKET</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </span>
 
                 <div>
                     <p class="showing">Showing 192 of 361,276</p>
                 </div>
                 <div id="line"></div>
                 <a id="showMore">
-                    <div>Show more</div>
+                    <button onclick="toggle(this)">Show more</button>
                 </a>
                 <div>
                    <h5 id="sponser">Sponsored links</h5>
@@ -1837,6 +2088,7 @@
   }
   
   display(product_data);
+  
 
 function mymenFunction(){
     window.location.href="Product.html"
@@ -2302,6 +2554,24 @@ function mywomenFunction(){
     }
   
 </script>
+
+<script>
+    var toggle = button => {
+       var element = document.getElementById("moreCont");
+       var hidden = element.getAttribute("hidden");
+      
+        if(hidden){
+            element.setAttribute("hidden", "hidden");
+        }
+        else{
+            element.removeAttribute("hidden")
+            button.innerText = "NO MORE PRODUCTS";
+        }
+    }
+</script>
+
+
+
 
 <script src="https://kit.fontawesome.com/01d90ed8c9.js" crossorigin="anonymous"></script>
 <script src="navbar.js"></script>
