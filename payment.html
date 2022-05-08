@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Payment</title>
+   <link rel="stylesheet" href="navbar.css">
+   <link rel="shortcut icon" href="https://www.lyst.com/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+   <div id="navbar">
+      <div id="topBar">
+         <div>IN - US$</div>
+         <div id="help">Help <i class="fa-solid fa-angle-down"></i></div>
+         <div><a href="alreadymember.html">Sign in</a></div>
+         <div><a href="singup.html">Join</a></div>
+      </div>
+      <div id="bottomBar">
+         <div>
+            <div><a href="homepage.html">LYST</a></div>
+            <div id="women" class="underline"><a href="1st.html">WOMEN</a></div>
+            <div id="men" class="underline"><a href="accessories.html">MEN</a></div>
+         </div>
+         <div id="searchBar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="search" type="text" placeholder='SEARCH (E.G. "VALENTINO DRESSES")'>
+         </div>
+      </div>
+   </div>
+   <!-- Modal content -->
+   <div id="helpDown">
+      <div><p><a href="help.html">Help center</a></p></div>
+      <div><p><a href="contact.html">Contact us</a></p></div>
+      <div><p><a href="">About us</a></p></div>
+      <div><p><a href="">Careers</a></p></div>
+   </div>
+   <div id="myModal">
+      <div id="left">
+         <h3>Hot right now</h3>
+         <div id="hot"></div>
+         <h3>Clothing form Top Brands</h3>
+         <div class="common" id="clothing"></div>
+         <h3>Dresses from Top Brands</h3>
+         <div class="common" id="dresses"></div>
+         <h3>Shoes from Top Brands</h3>
+         <div class="common" id="shoes"></div>
+         <h3>Sneakers from Top Brands</h3>
+         <div class="common last" id="sneakers"></div>
+      </div>
+      <div id="right">
+         <div>
+            <div><span id="close">&times;</span></div>
+         </div>
+         <div>
+            <div>Keep track of all your searches in one place</div>
+            <div id="rating">
+               <p>4.8</p>
+               <div id="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+               </div>
+               <p>5.4k+ Ratings</p>
+            </div>
+         </div>
+         <div>
+            <img src="https://static.lystit.com/static/n/web/react/components/send-to-app-banner/images/lyst-mobile-devices.2f5bb3f3ccb375b9007e87c578cb9c07.png" alt="">
+            <button>Download the free app</button>
+         </div>
+      </div>
+   </div>
+   <!-- payment content -->
+   <div id="pBox">
+      <p id="boxP">Payment</p>
+      <div>
+         <form id="pForm">
+            <div id="p">
+               <p>Credit or Debit Card</p>
+               <i class="fa-brands fa-cc-visa"></i>
+               <i class="fa-brands fa-cc-mastercard"></i>
+            </div>
+            <input type="text" id="cardNum" class="pin" placeholder="Card Number">
+            <div id="mycvv">
+               <input type="month" id="my" class="pin">
+               <input type="password" id="cvv" class="pin" placeholder="Security Code (cvv)">
+            </div>
+         </form>
+      </div>
+      <div id="pBtn">
+         <button id="pB">Place Order</button>
+         <p>This order total is 100% guaranteed. There will be no additional charges due upon receipt.</p>
+      </div>
+      <div id="tc">
+         By placing your order, you agree to the Terms & Conditions and Privacy Policy of Borderfree from Pitney Bowes, Saks Fifth Avenue Off 5th’s international fulfillment service. Borderfree is an online merchant that is located at Shelton, US, 06484, 27 Waterview Drive, CT.
+      </div>
+   </div>
+</body>
+</html>
+<script src="navbar.js"></script>
+<script src="https://kit.fontawesome.com/ef3b2a94d1.js" crossorigin="anonymous"></script>
+<script src="payment.js"></script>
