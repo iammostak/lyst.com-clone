@@ -87,6 +87,7 @@ a {
    height: 500px;
    display: flex;
    background: white;
+   margin-bottom: 50px;
 }
 #left {
    width: 100%;
