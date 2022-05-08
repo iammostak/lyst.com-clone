@@ -1,8 +1,5 @@
 .main{
     display: flex;
-    /* position: -webkit-sticky;
-    position: sticky;
-    top: -1px; */
 }
 h1{
     padding: 40px;
@@ -24,21 +21,15 @@ h3{
 }
 .bigbox{
     display: flex;
-    /* display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px ; */
     margin: 45px;
-    /* margin: 0%; */
 }
 #container{
     height: 500px;
     width: 300px;
     padding: 20px;
-    /* border: 1px solid; */
     position: -webkit-sticky;
     position: sticky;
     top: -1px;
-   
 }
 .pic{
     background-color: white;
@@ -52,53 +43,27 @@ div.pic{
     margin: 0%;
     height: auto;
     width: 90%;
-    /* border: 1px solid red; */
-    /* display: flex; */
-/* display: grid;
-grid-template-columns: repeat(4,1fr); */
-
 }
-
-.sort{
-    display: flex;
-    justify-content: space-between;
-
-}
-/* h4{
-    text-align: center;
-} */
 #sortPrice{
-    /* padding: 50px; */
-    margin-top: 3px;
-    font-size: 100px;
-   /* border: none; */
-    /* font-weight: bold;
-    box-sizing: border-box; */
+    border: none;
+    outline: none;
 }
 select{
     display: flex;
     width: 80%;
     margin: 20px;
-
 }
 .button-value{
     cursor: pointer;
 }
-
 .products{
-  
     display: flex;
     flex-wrap: wrap;
-
 }
-
- /* filter css   */
 input{
     outline: none;
     border: none;
-     
 }
-
 .multi-selector{
     width: 100%;
 }
@@ -106,13 +71,11 @@ input{
     border: 1px solid rgba(187, 187, 187, 0.641);
 }
 .select-field,.task,.list,.select-field1,.select-field2,.select-field3,.select-field4{
-  
     background-color:white;
     padding: 15px;
 }
 .list,.list1,.list2,.list3,.list4{
     box-shadow: 0 30px 60px rgb(0,0,0,0.2);
- 
     display: none;
 }
 .down-arrow,.down-arrow1,.down-arrow2{
@@ -133,9 +96,6 @@ input{
     font-size: 17px;
     padding: 10px;
 }
-/* .task:hover{
-    background-color: rgb(61, 134, 198);
-} */
 .show{
     display: block;
 }
@@ -146,38 +106,26 @@ input{
  color: black;
 font-size: 15px;
  font-weight: bold;
- /* opacity: 5;  */
 }
-
 .button-value{
    padding: 5px 5px 5px 5px ;
-   /* font-weight: bold; */
    color: black;
    border:10px solid rgb(248, 242, 242);
    background: white;
    font-size: 15px;
-   /* margin: 10px; */
-   
 }
-
-
 #btn{
     display: flex;
-    ;
-  
 }
-
 #recom{
-    border: 1px solid red;
-    appearance: none;
-    position: relative;
-    display: inline-block;
     font-size: 27px;
     width: 200px;
-    text-align: center;
     height: 40px;
     border: 1.5px solid black;
-    margin-left: 400px;
-   
-    outline: none;
+    margin-left: 75.7%;
+    margin-bottom: 20px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
