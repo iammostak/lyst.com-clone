@@ -28,7 +28,6 @@
            font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
         }
         #container{
-            /* position: relative; */
             display: grid;
             grid-template-columns: 239px minmax(0,1fr);
             grid-template-rows: 1fr;
@@ -40,7 +39,6 @@
         #container > aside{
             display: flex;
             position: sticky;
-            /* z-index: 2; */
             top: 0;
             left: 0;
             align-self: start;
@@ -48,16 +46,11 @@
             overflow-y: scroll;
         }
         #rightt{
-            /* position: -webkit-sticky; */
-            /* position: sticky; */
             top: 0;
-            /* left: 0; */
             background-color: #fff;
-            /* z-index: 2; */
             display: flex;
             justify-content: space-between;
             font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
-            /* margin-bottom: 15px; */
             background-position-x: center;
             margin-top: 10px;
             padding: 8px;
@@ -69,7 +62,6 @@
             top: 0;
         }
         #right>h2>span{
-           
             font-weight: 540;
             font-size: 20px;
             letter-spacing: .144px;
@@ -85,7 +77,6 @@
             height: 40px;
             border: 1.5px solid black;
             margin-left: 400px;
-           
             outline: none;
         
         }
@@ -93,7 +84,6 @@
             border: none;
             outline: none;
         }
-
 
         #rigthFilter::-ms-expand {
         display: none;
@@ -106,20 +96,15 @@
         }
         #middlediv{
             display: flex;
-            /* position: -webkit-sticky; */
-            /* position: sticky; */
             top: 0;
             left: 0;
             background-position-x: center;
             background-color: #fff;
             width: 105.5%;
             overflow-x: scroll;
-            /* width: 100%; */
             border-bottom: 1px solid #000;
             border-bottom: none;
             background-color: #f5f4f2;
-           
-        
             margin-bottom: 20px;
             list-style: none;
         }
@@ -146,16 +131,12 @@
             display:inline-flex;
             width: 100%;
             padding: 3px 8px 25px;
-            background-color: #fff;
-
-            
+            background-color: #fff;    
         }
         #filter +div{
             font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
         }
         #btn1{
-
-
         display: flex;
         font-size: 23px;
         margin-left: -10px;
@@ -163,7 +144,6 @@
         }
 
         #btn2{
-
             margin-top: 8px;
             display: flex;
             font-size: 13px;
@@ -176,8 +156,7 @@
             display: grid;
             grid-template-columns: repeat(4,1fr);
         }
-        #products>div{
-            
+        #products>div{ 
             padding: 20px;
             border: 1px solid gray;
             overflow-wrap: break-word;
@@ -199,9 +178,6 @@
             border-top: 2px soild black;
             border-bottom:2px solid black ;
         }
-
-
-
         #middlediv2{
             display: flex;
             width: 108.3%;
@@ -227,8 +203,6 @@
             padding: 4px;
             margin-top: 13px;
         }
-
-     
      #rigthFilter3{
             display: flex;
             height: 50px;
@@ -238,15 +212,13 @@
             border-left: none;
             border-right: none;
             cursor: pointer;
-    
         }
         #rigthFilter3>div{
             margin-top: 15px;
             font-size: 18px;
             font-weight: 750;
             vertical-align: middle;
-            display: flex;
-            
+            display: flex; 
             font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
             justify-content: flex-start;
             justify-content: center;
@@ -257,73 +229,67 @@
         }
         #rigthFilter3>i{
             margin-left: 30px;
-            margin-top: 16px;
+            margin-top: 16px;   
+        }
+                /* <==============================button css=======================> */
+        input{
+            cursor: pointer;
+            outline: none;
+            border: none;
+        }
+        .multi-selector{
+            cursor: pointer;
+            width:max-content;
+        }
+        .select-field1,.select-field2,.select-field3,.select-field4,.select-field5,.select-field6,.select-field7,.select-field8{
+            border: 0.1px solid gray;
+            border-left: none;
+            border-right: none;
             
         }
+        .select-field,.task,.list,.select-field1,.task,.list2,.select-field3,.select-field2,.select-field4,.select-field5,.select-field6,.select-field7,.select-field8{
+            width: 100%;
+            background-color: white;
+            padding: 0.8rem;
+        }
+        .list,.list1,.list2,.list3,.list4,.list5,.list6,.list7,.list8{
+            box-shadow: 0 30px 60px gray;
+            display: none;
+        }
+        
+        .task{
+            display: block;
+            padding-left: 0;
+        }
+        .task span{
+            float: right;
+            font-size: 0.9rem;
+            padding-top: 6px;
+        }
+        .task:hover{
+            cursor: pointer;
+            background-color: aliceblue;
+        }
+        .show{
+            display: block;
+        }
+        .rotate180{
+            transform: rotate(180deg);
+        }
 
+        .down-arrow,.down-arrow1,.down-arrow2,.down-arrow3,.down-arrow4,.down-arrow5,.down-arrow6,.down-arrow7,.down-arrow8{
+            font-size: 1.2rem;
+            display: inline-block;
+            cursor: pointer;
+            transition: 0.1s linear;
+            color: gray;
+        }
+        ::placeholder  {
+        color: black;
+        font-size: 16px;
+            font-weight: 539;
 
-
-        /* <==============================button css=======================> */
-input{
-    cursor: pointer;
-     outline: none;
-     border: none;
- }
- .multi-selector{
-     cursor: pointer;
-     width:max-content;
- }
- .select-field1,.select-field2,.select-field3,.select-field4,.select-field5,.select-field6,.select-field7,.select-field8{
-    border: 0.1px solid gray;
-     border-left: none;
-     border-right: none;
-     
- }
- .select-field,.task,.list,.select-field1,.task,.list2,.select-field3,.select-field2,.select-field4,.select-field5,.select-field6,.select-field7,.select-field8{
-     width: 100%;
-     background-color: white;
-     padding: 0.8rem;
- }
- .list,.list1,.list2,.list3,.list4,.list5,.list6,.list7,.list8{
-     box-shadow: 0 30px 60px gray;
-     display: none;
- }
- 
- .task{
-     display: block;
-     padding-left: 0;
- }
- .task span{
-     float: right;
-     font-size: 0.9rem;
-     padding-top: 6px;
- }
- .task:hover{
-     cursor: pointer;
-     background-color: aliceblue;
- }
- .show{
-     display: block;
- }
- .rotate180{
-     transform: rotate(180deg);
- }
-
- .down-arrow,.down-arrow1,.down-arrow2,.down-arrow3,.down-arrow4,.down-arrow5,.down-arrow6,.down-arrow7,.down-arrow8{
-     font-size: 1.2rem;
-     display: inline-block;
-     cursor: pointer;
-     transition: 0.1s linear;
-     color: gray;
- }
-
- ::placeholder  {
-  color: black;
-   font-size: 16px;
-    font-weight: 539;
-
-}
-
+        }
 
  /* <==============================button css=END======================> */
 
@@ -337,7 +303,6 @@ input{
     line-height: 15px;
     margin-right: 29px;
  }
-
  #name{
     font-size: 14px;
     line-height: 18px;
@@ -347,21 +312,16 @@ input{
     color: #000;
     font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
  }
-
 #price{
-   
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     margin-left: 5px;
     color: #000;
     font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
-    color: red;
-    
+    color: red;    
 }
-
 #cprice{
-  
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -369,32 +329,24 @@ input{
     font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
     text-decoration: line-through;
 }
-
-
-
-        .showing{
+.showing{
             text-align: center;
             margin: 60px 12px 12px;
             font-size: 14px;
             font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
-    
-   
         }
 
         #line{
 
             background-color: #e0e1e7;
             height: 4px;
-            /* margin: 0 auto 2px; */
             font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
             font-weight: 300;
             font-size: 15px;
             line-height: 1.4;
             color: #000;
            margin-left: 350px;
-           margin-right: 350px;
-            
-            
+           margin-right: 350px;   
         }
 
         #showMore{
@@ -404,26 +356,20 @@ input{
             border-width: 1px;
             font-weight: 600;
             margin-left: 350px;
-
             position: relative;
             display: inline-flex;
             justify-content: center;
             align-items: center;
             line-height: 14px;
             font-size: 18px;
-        
             text-align: center;
             cursor: pointer;
-
             background-color: #fff;
             border-color: #000;
             color: #000;
             border: 2px solid black;
-            /* text-decoration: none; */
             font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
-            /* margin-left: 500px;
-            margin-right: 500px;
-     */
+  
 }
         #showMore>div{
             margin-left: 200px;
@@ -434,7 +380,6 @@ input{
             background-color: black;
             color: white;
         }
-
         #sponser{
             font-weight: 600;
             font-size: 18px;
@@ -451,9 +396,7 @@ input{
      #last{
          display: grid;
          grid-template-columns: repeat(4,170px);
-         grid-template-rows: 300px;
-         
-         
+         grid-template-rows: 300px;    
      }
      #last >div{
          border: 1px solid rgb(224, 223, 223);
@@ -502,181 +445,108 @@ input{
          font-size: 8px;
          padding-bottom: 20px;
      }
-
-
-
-
      /* Footer Div */
 
-.footerDiv {
-    width: 100%;
-    height: 570px;
-    background-color: whitesmoke;
-    display: flex;
-}
+    .footerDiv {
+        width: 100%;
+        height: 570px;
+        background-color: whitesmoke;
+        display: flex;
+    }
 
-.footerChildDiv {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-}
+    .footerChildDiv {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
 
-.footerContentDiv {
-    width: 50%;
-    height: 100%;
-}
+    .footerContentDiv {
+        width: 50%;
+        height: 100%;
+    }
 
-.heading2 {
-    font-size: 24px;
-    font-family: Suisse Intl, Helvetica Neue, Helvetica, Arial, sans-serif;
-    margin-top: 60px;
-}
+    .heading2 {
+        font-size: 24px;
+        font-family: Suisse Intl, Helvetica Neue, Helvetica, Arial, sans-serif;
+        margin-top: 60px;
+    }
 
-.footerContent {
-    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+    .footerContent {
+        font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-size: 15px;
+        color: black;
+        line-height: 1.5;
+    }
 
+    .heading3 {
+        font-size: 20px;
+        font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+        margin-top: 60px;
+    }
+
+    .fiveRating {
+        width: 184px;
+        height: 34px;
+    }
+
+    #logo1 {
+        width: 22px;
+        height: 22px;
+        border: 1px solid white;
+    }
+
+    .contentReviews1 {
+        margin-top: 5px;
+        font-size: 15px;
+        font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+
+    .contentReviews {
+        margin-top: -12px;
+        font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 15px;
-    color: black;
-    line-height: 1.5;
-}
-
-.heading3 {
-    font-size: 20px;
-    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
-
-    margin-top: 60px;
-}
-
-.fiveRating {
-    width: 184px;
-    height: 34px;
-    /* margin-top: -15px; */
-    /* background-color: gray; */
-}
-
-#logo1 {
-    width: 22px;
-    height: 22px;
-    border: 1px solid white;
-}
-
-.contentReviews1 {
-    margin-top: 5px;
-    font-size: 15px;
-    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
-
-}
-
-.contentReviews {
-    margin-top: -12px;
-    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
-
-    font-size: 15px;
-}
-
-span {
-    font-weight: bold;
-    font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
-
-}
-
-.facebook-logo {
-    width: 266px;
+    }
+    span {
+        font-weight: bold;
+        font-family: Suisse Intl,Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+    .facebook-logo {
+        width: 266px;
     height: 66px;
-}
-
-#footerImageDiv {
-    width: 55%;
-    height: 100%;
-    /* border: 1px solid rgb(0, 4, 255); */
-}
-
-
-#box{
-    display: flex;
-    margin-top: 9px;
-    
-}
-
-    /* .cartbtn{
-        margin-top: 20px;
-        padding:10px;
-        --glow-color: rgb(244, 238, 250);
- --glow-spread-color: rgba(246, 244, 247, 0.781);
- --enhanced-glow-color: rgb(244, 238, 249);
- --btn-color: rgb(121, 140, 192);
- border: .25em solid var(--glow-color);
- padding: 1em 3em;
- color: var(--glow-color);
- font-size: 15px;
- font-weight: bold;
- background-color: var(--btn-color);
- border-radius: 1em;
- outline: none;
- box-shadow: 0 0 1em .25em var(--glow-color),
-        0 0 4em 1em var(--glow-spread-color),
-        inset 0 0 .75em .25em var(--glow-color);
- text-shadow: 0 0 .5em var(--glow-color);
- position: relative;
- transition: all 0.3s;
-        
-        
     }
-
-    .cartbtn::after{
-        pointer-events: none;
- content: "";
- position: absolute;
- top: 120%;
- left: 0;
- height: 100%;
- width: 100%;
- background-color: var(--glow-spread-color);
- filter: blur(2em);
- opacity: .7;
- transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+    #footerImageDiv {
+        width: 55%;
+        height: 100%;
     }
-    .cartbtn:hover{
-        color: var(--btn-color);
- background-color: var(--glow-color);
- box-shadow: 0 0 1em .25em var(--glow-color),
-        0 0 4em 2em var(--glow-spread-color),
-        inset 0 0 .75em .25em var(--glow-color);
+    #box{
+        display: flex;
+        margin-top: 9px;  
     }
-    .cartbtn:active {
-        box-shadow: 0 0 0.6em .25em var(--glow-color),
-        0 0 2.5em 2em var(--glow-spread-color),
-        inset 0 0 .5em .25em var(--glow-color);
-    } */
-
-
     .cartbtn{
-        margin-top: 20px;
-            width: 200px;
-            padding: 12px;
-            border-width: 1px;
-            font-weight: 550;
-            align-items: center;
-            line-height: 12px;
-            font-size: 18px;
-            text-align: center;
-            cursor: pointer;
-            background-color: #000;
-            border-color: #000;
-           color: white;
-            border: 2px solid black;
-            font-family: "Spartan Bold",Arial,sans-serif;
-            cursor: pointer;
-    }
+            margin-top: 20px;
+                width: 200px;
+                padding: 12px;
+                border-width: 1px;
+                font-weight: 550;
+                align-items: center;
+                line-height: 12px;
+                font-size: 18px;
+                text-align: center;
+                cursor: pointer;
+                background-color: #000;
+                border-color: #000;
+            color: white;
+                border: 2px solid black;
+                font-family: "Spartan Bold",Arial,sans-serif;
+                cursor: pointer;
+        }
 
     .cartbtn:hover{
     background-color: #83caca;
     border-color: #83caca;
     color: black;
     }
-
-  
 
     </style>
 </head>
@@ -686,14 +556,14 @@ span {
     <div id="topBar">
        <div>IN - US$</div>
        <div id="help">Help <i class="fa-solid fa-angle-down"></i></div>
-       <div><a href="">Sign in</a></div>
-       <div><a href="">Join</a></div>
+       <div><a href="alreadymember.html">Sign in</a></div>
+       <div><a href="singup.html">Join</a></div>
     </div>
     <div id="bottomBar">
        <div>
-          <div><a href="">LYST</a></div>
-          <div id="women" class="underline"><a href="">WOMEN</a></div>
-          <div id="men" class="underline"><a href="">MEN</a></div>
+          <div><a href="homepage.html">LYST</a></div>
+          <div id="women" class="underline"><a href="1st.html">WOMEN</a></div>
+          <div id="men" class="underline"><a href="accessories.html">MEN</a></div>
        </div>
        <div id="searchBar">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -771,7 +641,6 @@ span {
                     <ul>
                             <li>Men's &nbsp; <i class="fa-solid fa-xmark"></i></li>
                             <li>Clothing &nbsp; <i class="fa-solid fa-xmark"></i></li>
-                            <!-- <li>+Formal Pants</li> -->
                         </ul>
                </div>
                 <div class="multi-selector">
@@ -785,12 +654,12 @@ span {
                         <div class="list">
                   
                           <label for="Womens's" class="task">
-                               <input type="radio" name="radio" id="sorting" value="Glit" >
+                               <input type="radio" name="radio" onclick="mymenFunction()"><a href="Product.html"></a>
                                Men's
                                
                         </label>
                           <label for="Men's" class="task">
-                               <input type="radio" name="radio" id="sorting2" value="Glit3">
+                               <input type="radio" name="radio" onclick="mywomenFunction()"><a href="womens.html"></a>
                                Women's
                               
                         </label>
@@ -1048,8 +917,6 @@ span {
                             
                     </div>
                 </div>
-                
-               
                 <div id="products"></div>
 
                 <div>
@@ -1096,12 +963,8 @@ span {
                         <p>Ad</p>
                     </div>
                 </div>
-            </div>
-            
+            </div>         
         </div>
-
-        
-
 
 <!-- Footer Div -->
 
@@ -1157,12 +1020,6 @@ span {
 
 <!-- temporary div -->
 
-
-
-
-
-
-
     </div>
     
 </body>
@@ -1170,10 +1027,7 @@ span {
 
 <script>
 
-
 // <-!-----------------------------FOR--HID--AND--SHOW--START---------------------------------------------------------->
-
-
 
     document.querySelector('.select-field').addEventListener('click',()=>{
         document.querySelector('.list').classList.toggle('show');
@@ -1221,7 +1075,6 @@ span {
 
     });
  
-
 // <-!-----------------------------FOR--HID--AND--SHOW--END---------------------------------------------------------->
 
     var product_data = [
@@ -1897,9 +1750,7 @@ span {
 
     localStorage.setItem("backend_store",JSON.stringify(product_data));
 
-
     var products = document.querySelector("#products");
-    // var filter = document.querySelector("#sorting");
     var clothing =document.querySelector('#clothing');
     var shoes =document.querySelector('#shoes');
     var accessories=document.querySelector('#accessories')
@@ -1935,8 +1786,7 @@ span {
 
     display(product_data);
     localStorage.setItem('localData', JSON.stringify(product_data));
-
-    
+   
     function display(data){
         products.innerHTML= null;
 
@@ -1986,11 +1836,16 @@ span {
         });
   }
   
-
   display(product_data);
 
+function mymenFunction(){
+    window.location.href="Product.html"
+}
 
-  
+function mywomenFunction(){
+    window.location.href="womens.html";
+}
+ 
   clothing.addEventListener("change",function(){
         if(clothing.value== "clothing"){
             display(product_data);
@@ -1999,12 +1854,9 @@ span {
             var filtered = product_data.filter(function(element){
                 return element.category == clothing.value;
             })
-
             display(filtered);
-        }
-        
+        }   
     })
-
 
     shoes.addEventListener("change",function(){
         if(shoes.value== "none"){
@@ -2016,7 +1868,6 @@ span {
             })
 
             display(filtered);
-            // console.log(filtered)
         }
     })
 
@@ -2030,7 +1881,6 @@ span {
             })
 
             display(filtered);
-            // console.log(filtered)
         }
     })
     bag.addEventListener("change",function(){
@@ -2043,7 +1893,6 @@ span {
             })
 
             display(filtered);
-            // console.log(filtered)
         }
     })
     jewelry.addEventListener("change",function(){
@@ -2056,7 +1905,6 @@ span {
             })
 
             display(filtered);
-            // console.log(filtered)
         }
     })
     home.addEventListener("change",function(){
@@ -2069,7 +1917,7 @@ span {
             })
 
             display(filtered);
-            // console.log(filtered)
+          
         }
     })
     onsale.addEventListener("change",function(){
@@ -2082,7 +1930,7 @@ span {
             })
 
             display(filtered);
-            // console.log(filtered)
+           
         }
     })
     onsale20.addEventListener("change",function(){
@@ -2412,7 +2260,6 @@ span {
             })
 
             display(filtered);
-        
         }
     })
     andrew
@@ -2430,26 +2277,6 @@ span {
         
         }
     })
-
-
-
-
-    // filter.addEventListener("change",function(){        
-    //     if(filter.value== "HTL"){
-    //         var high_to_low = product_data.sort(function(a,b){
-    //             return b.price - a.price;
-    //         })   
-    //         display(high_to_low);
-    //         // console.log(high_to_low)  
-    //     }
-    //     else if(filter.value== "LTH"){
-    //         var low_to_high = product_data.sort(function(a,b){
-    //             return a.price - b.price;
-    //         })   
-    //         display(low_to_high);
-    //     }        
-    // })
-
 
     function sortByPrice() {
         var price = document.querySelector('#sortingg').value;
@@ -2473,40 +2300,8 @@ span {
             display(product_data);
         }
     }
-
-
   
-    // function handlesalary(){
-    //     var selected = document.querySelector("#sorting").value;
-    //     if(selected == "HTL"){
-    //         product_data.sort(function(a,b){
-    //             return b.price - a.price
-    //         });
-    //         display(data)
-    //         console.log(product_data);
-    //     }
-    //     if(selected == "LTH"){
-    //         product_data.sort(function(a,b){
-    //             return a.price - b.price
-    //         });
-    //         display(data)
-    //         console.log(product_data);
-    //     }
-    // }
-
-
-
-
-    
-             
-    // console.log(product_data)
-
-
-
-
-    
 </script>
-
 
 <script src="https://kit.fontawesome.com/01d90ed8c9.js" crossorigin="anonymous"></script>
 <script src="navbar.js"></script>
