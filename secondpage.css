@@ -1,0 +1,53 @@
+.secondpage{
+    background-color: black;
+    /* padding: 5px; */
+    
+}
+.secondpage>a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.first1{
+    background-color: white;
+    /* padding: 5px; */
+}
+.first1>a{
+   
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.singuppara{
+    /* border: 1px solid red; */
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.inner1{
+    width: 30%;
+}
+#signuppage1{
+    /* border: 1px solid blue; */
+    width: 50%;
+    height: 400px;
+}
+#inner1{
+    width: 60%;
+    height: 500px;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+}
+.free1{
+    /* border: 1px solid orange; */
+    width: 50%;
+    height: 450px;
+background-image:url(https://static.lystit.com/static/n/img/encouraged-search/gradient-bg-6-2.deff3c85cca058ba0fe2cc465803e1fa.jpg);
+background-size: cover;
+margin-left: 47px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
