@@ -1,0 +1,519 @@
+/* Home Div */
+
+#mainDiv {
+    width: 100%;
+    height: 500px;
+    border-bottom: 1px solid black;
+    margin: 0;
+    margin-bottom: 70px;
+    padding: 0;
+}
+
+#mainHomePic {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: Suisse Intl, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
+/*Smart Div */
+
+.smarterDiv {
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    display: flex;
+    margin-top: 50px;
+}
+
+.childSmrtDiv {
+    width: 23%;
+    height: 90%;
+    padding: 25px;
+}
+
+#bestPriceDiv {
+    width: 22%;
+    height: 90%;
+    padding: 25px;
+}
+
+#smartSignBlank {
+    width: 8%;
+    height: 100%;
+    background-color: rgb(206, 243, 39);
+}
+
+.childSmrtDiv>h1 {
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.topic {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.content {
+    font-size: 15px;
+    font-variant: inherit;
+    line-height: 1.3;
+}
+
+#topic2 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 150px;
+    line-height: 0.9;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    font-size: 16px;
+}
+
+
+/* Footer Div */
+
+.footerDiv {
+    width: 100%;
+    height: 570px;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.footerChildDiv {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerContentDiv {
+    width: 50%;
+    height: 100%;
+}
+
+.heading2 {
+    font-size: 24px;
+    margin-top: 60px;
+}
+
+.footerContent {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+    line-height: 1.8;
+}
+
+.heading3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 60px;
+}
+
+.fiveRating {
+    width: 184px;
+    height: 34px;
+    margin-top: 5px;
+    /* background-color: gray; */
+}
+
+#logo1 {
+    width: 22px;
+    height: 22px;
+    border: 1px solid white;
+}
+
+.contentReviews1 {
+    margin-top: 05px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contentReviews {
+    /* margin-top: -12px; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+span {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.facebook-logo {
+    width: 266px;
+    height: 66px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#footerImageDiv {
+    width: 55%;
+    height: 100%;
+}
+
+#copyright {
+    text-decoration: none;
+    cursor: auto;
+    margin-top: 20px;
+}
+
+
+/* Pasted Code */
+
+#container {
+    display: flex;
+    height: 300px;
+    width: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#container::-webkit-scrollbar {
+    display: none;
+}
+
+#container>div {
+    display: flex;
+    border-right: 1px solid black;
+}
+
+#container>div>div {
+    /* border: 1px solid red; */
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    margin-left: -150px;
+    margin-right: -150px;
+    margin-top: 7%;
+    font-size: 20px;
+}
+
+#container>div>div>p {
+    margin-bottom: -40px;
+    font-size: 24px;
+}
+
+
+/* Pasted Code Again */
+
+#container2 {
+    display: flex;
+    height: 300px;
+    width: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: 100px;
+    border-bottom: 1px solid black;
+}
+
+#container2::-webkit-scrollbar {
+    display: none;
+}
+
+#container2>div {
+    display: flex;
+    border-right: 1px solid black;
+}
+
+#container2>div>div {
+    /* border: 1px solid red; */
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    margin-left: -150px;
+    margin-right: -150px;
+    margin-top: 10%;
+    font-size: 20px;
+    justify-content: center;
+}
+
+#container2>div>div>p {
+    margin-bottom: -0.1%;
+    font-size: 23px;
+    margin-right: 100px;
+    /* margin-top: 20px; */
+}
+
+
+/* Pasted Code 3 Times */
+
+.container3 {
+    display: flex;
+    height: 360px;
+    width: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* margin-bottom: 100px; */
+    border: 1px solid black;
+}
+
+.container3>div {
+    border-right: 1px solid black;
+}
+
+.container3::-webkit-scrollbar {
+    display: none;
+}
+
+.container3>div>div {
+    height: 80px;
+    width: 430px;
+}
+
+.container3>div>img {
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+}
+
+.container3>div>div>p {
+    font-size: 23px;
+    margin-left: 35px;
+}
+
+.breakout {
+    font-size: 65px;
+    margin-left: 35px;
+    margin-right: 38px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.trending {
+    font-size: 65px;
+    margin-left: 35px;
+    margin-right: 56px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.hotCloth {
+    font-size: 65px;
+    margin-left: 35px;
+    margin-right: 40px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.trendingColor {
+    background-color: whitesmoke;
+}
+
+#smartSign:hover {
+    background-color: #c9bffb;
+    cursor: pointer;
+    border-right: 1px solid black;
+}
+
+#smartSign,
+#smartSignBlank {
+    background-color: #cafc4f;
+}
+
+#smartDiv {
+    border: 1px solid black;
+}
+
+.footerContent:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#smartSign {
+    border-left: 1px solid black;
+}
+
+
+/* Most Wanted Div */
+
+.mostWantedDiv {
+    width: 100%;
+    height: 320px;
+    border-bottom: 1px solid black;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+#verticalDiv {
+    width: 320px;
+    height: 50px;
+    /* border: 1px solid black; */
+    transform: rotate(270deg);
+    margin-top: 112px;
+    font-size: 36px;
+    margin-left: -125px;
+}
+
+#horizontalDiv {
+    width: 95%;
+    height: 100%;
+    /* border: 1px solid black; */
+    margin-left: -135px;
+}
+
+.horizontalChildDiv {
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid blue; */
+    display: flex;
+    margin-top: 20px;
+}
+
+.mostContentDiv {
+    width: 18%;
+    height: 100%;
+    /* border: 1px solid red; */
+    font-family: Suisse Intl, Helvetica Neue, Helvetica, Arial, sans-serif;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.mostContentDiv>p {
+    font-size: 22px;
+    margin-top: 2px;
+    font-family: Suisse Intl, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 17px;
+    line-height: 1;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+#TopBarrier {
+    margin-top: 68px;
+}
+
+.mostLikedDiv:hover {
+    color: rgb(23, 0, 231);
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+
+.accessories {
+    width: auto;
+    height: 556px;
+    border-bottom: 1px solid black;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    align-items: flex-end;
+}
+
+.childAssoDiv1:hover {
+    color: rgb(23, 0, 231);
+    cursor: pointer;
+}
+
+.childAssoDiv2 {
+    width: 200px;
+    height: 250px;
+    margin-left: -57%;
+}
+
+.childAssoDiv2>p {
+    line-height: 1.7;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    white-space: nowrap;
+}
+
+#aa {
+    margin-top: 265px;
+}
+
+#bb {
+    margin-top: 265px;
+}
+
+#cc {
+    margin-top: 387px;
+}
+
+#dd {
+    margin-top: 365px;
+}
+
+#ee {
+    margin-top: 265px;
+}
+
+#ff {
+    margin-top: 265px;
+}
+
+#gg {
+    margin-top: 265px;
+}
+
+#hh {
+    margin-top: 265px;
+}
+
+#ii {
+    margin-top: 360px;
+}
+
+#jj {
+    margin-top: 410px;
+}
+
+.accessories::-webkit-scrollbar {
+    display: none;
+}
+
+.accessories>div {
+    height: 100%;
+    display: flex;
+    width: 256px;
+}
+
+.childAssoDiv1 {
+    transform: rotate(270deg);
+    font-size: 32px;
+    height: 45px;
+    margin-top: 215px;
+    width: 500px;
+    margin-left: -82%;
+    margin-right: -30%;
+    letter-spacing: .01em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.childAssoDiv2>p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.childAssoDiv2>.morePlus {
+    font-weight: bold;
+}
