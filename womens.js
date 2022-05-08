@@ -1,5 +1,4 @@
-// <div class="_2AW6e"><div class="_18xWY _13JYm"><div class="_1wI0O"><a href="/clothing/nasty-gal-playing-for-flower-floral-midi-dress/"><img width="200" height="250" src="https://cdna.lystit.com/200/250/tr/photos/nastygal/9b5a2cab/nasty-gal-designer-white-Floral-V-Neck-High-Low-Midi-Dress.jpeg" 
-// alt="Nasty Gal Playing For Flower Floral Midi Dress - White" class="_2Z2ro" data-pin-no-hover="true"></a></div><div class="_3R1Ft"><span><button class="_22dAL _2cc-R"><svg aria-hidden="true" class="_1x27q svg-icon-heart-unpressed WY0BC"><use xlink:href="#heart-unpressed"></use></svg></button></span></div><div class="AILKu"><a href="/clothing/nasty-gal-playing-for-flower-floral-midi-dress/" class="nFxuJ"><h3 class="_2y5rn"><div class="_2dnLL _1R_Wx">Nasty Gal</div><div class="_1hp1J">Playing For Flower Floral Midi Dress - White</div></h3></a><div class="rcivh"><del class="EPPmz _1R_Wx">$63</del><span class="EPPmz _1R_Wx _2gdcI">$26</span><span class="_3QfyA">(55% off)</span></div><div class="_37Pn3"><svg aria-hidden="true" class="_1x27q svg-icon-hyperlink"><use xlink:href="#hyperlink"></use></svg><span>Nasty Gal</span></div></div></div></div>
+
 var productArr =[
     {
         img:"https://cdna.lystit.com/200/250/tr/photos/sachinandbabi/cc65aa2a/sachin-babi-SilverCharcoal-Simone-Gown.jpeg" ,
@@ -432,7 +431,7 @@ var products=document.querySelector(".products")
 console.log(products)
 
 
-var cardLS=JSON.parse(localStorage.getItem("masai-card"))  || []
+var cartLS=JSON.parse(localStorage.getItem("masaiCart"))  || []
 
 
 function display(data)
@@ -473,10 +472,10 @@ function display(data)
         price.style.color="red"
       
         var button=document.createElement("button")
-        button.innerText="Add to card"
+        button.innerText="Add to cart"
         
         button.addEventListener("click",function(){
-            AddToCard(elem)
+            AddToCart(elem)
         })
 
 
@@ -494,15 +493,12 @@ function display(data)
 display(productArr)
 
 
-function AddToCard(elem){
+function AddToCart(elem){
 
-    cardLS.push(elem)
-    localStorage.setItem("masai-cart",JSON.stringify(cardLS))
+    cartLS.push(elem)
+    localStorage.setItem("masaiCart",JSON.stringify(cartLS))
 
 }
-
-
-
 
 
 localStorage.setItem("backend_store",JSON.stringify(productArr));
