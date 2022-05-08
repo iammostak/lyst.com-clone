@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f8fd9c3469.js" crossorigin="anonymous"></script>
+   
+</head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            border: 1px solid black;
+            background-color:#f0f0f0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body>.container>div{
+            width: 50%;
+            background-color: white;
+            height: 50vh;
+            position: relative;
+        }
+        .container>div>.heading{
+            text-transform: uppercase;
+            font-size: 21px;
+            font-weight: 300;
+            margin:50px 0px 0px 70px;
+            position: absolute;
+        }
+        .emoji{
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .fa-solid{
+            color: blue;
+        }
+        div>p{
+            text-align: center;
+            margin-top: 30px;
+            margin-right:100px ;
+            line-height: 20px;
+            font-weight: 300;
+        }
+
+    </style>
+
+<body>
+    <div class="container">
+        <div>
+<div class="heading">
+            <h3>Please check your inbox </h3>
+        </div>
+            <div class="emoji">
+                <i class="fa-solid fa-face-smile-beam"></i>
+            </div>
+            <p>You are successfully Signup into the LYST<br>Go to the Login Page and Enter the email that you entered Now... </p>
+            <p>Didn’t get the email? 
+                <a href="/account/verify-token/?email=anmoljagota08@gmail.com"><strong>Resend link </strong></a>
+            </p>
+        </div>
+
+    </div>
+</body>
