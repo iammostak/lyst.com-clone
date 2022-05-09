@@ -31,7 +31,7 @@ function checkdata(data){
 
 if(flag==true){
    alert("login successfull");
-   window.location.href="homepage.html";
+   window.location.href="index.html";
 }
 else{
    box= document.createElement("div")
