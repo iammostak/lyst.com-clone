@@ -2000,6 +2000,7 @@
     ]
 
     localStorage.setItem("backend_store",JSON.stringify(product_data));
+    let cartLSdata = JSON.parse(localStorage.getItem("add-cart"))||[];
 
     var products = document.querySelector("#products");
     var clothing =document.querySelector('#clothingg');
@@ -2076,7 +2077,11 @@
 
             var button = document.createElement("button");
             button.innerText="ADD TO BASKET";
-            button.setAttribute("class","cartbtn")
+            button.setAttribute("class","cartbtn");
+            button.addEventListener("click",function(){
+                AddToCart(element);
+            })
+
 
             box.append(cprice,price)
 
@@ -2568,6 +2573,17 @@ function mywomenFunction(){
             button.innerText = "NO MORE PRODUCTS";
         }
     }
+
+
+
+    // ----------------------     add to cart section -------------------------
+
+function AddToCart(element){
+    cartLSdata.push(element);
+    localStorage.setItem("add-cart",JSON.stringify(cartLSdata));
+    alert("product Addes Sucessfully");
+    window.location.href="NewCrt.html";
+}
 </script>
 
 
