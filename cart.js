@@ -98,7 +98,7 @@ form.addEventListener('submit', function(event) {
    event.preventDefault();
    c++;
    if(promo.value == 'masai30' && c == 1) {
-      sum *= 0.3;
+      sum -= sum*0.3;
       total.innerText = sum;
    }
 })
