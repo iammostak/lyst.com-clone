@@ -497,7 +497,7 @@ function AddToCart(elem){
 
     cartLS.push(elem)
     localStorage.setItem("masaiCart",JSON.stringify(cartLS))
-
+    window.location.href="cart.html"
 }
 
 
