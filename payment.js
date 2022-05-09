@@ -6,6 +6,6 @@ pButton.addEventListener('click', function() {
    else if(pForm.cvv.value.length != 3) alert('Wrong CVV');
    else {
       alert('Payment Successful, Order Placed');
-      window.location.href = 'index.html';
+      // window.location.href = 'index.html';
    }
 })
