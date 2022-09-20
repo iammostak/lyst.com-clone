@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cart</title>
+   <link rel="stylesheet" href="../../styles/navbar.css">
+   <link rel="shortcut icon" href="https://www.lyst.com/favicon.ico" type="image/x-icon">
+   <style>
+      * {
+         margin: 0px;
+         padding: 0px;
+      }
+
+      #firstImg {
+         /* height: -0px; */
+         margin-top: 20px;
+         width: 300px;
+         margin-left: 35%;
+         padding: 6px;
+
+      }
+
+      .topnav {
+         margin-top: 40px;
+         overflow: hidden;
+         margin-left: 20px;
+         margin-right: 20px;
+         border-bottom: 0.5px solid black;
+
+      }
+
+      .topnav a {
+         float: left;
+         display: block;
+         color: black;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+      }
+
+      .topnav>a:hover {
+         background-color: black;
+         color: white;
+      }
+
+
+      .topnav .search-container {
+         float: right;
+      }
+
+      .topnav input[type=text] {
+         padding: 6px;
+         margin-top: 8px;
+         font-size: 17px;
+         border: none;
+      }
+
+      .topnav .search-container button {
+         float: right;
+         padding: 6px 10px;
+         margin-top: 8px;
+         margin-right: 16px;
+         background: #ddd;
+         font-size: 17px;
+         border: none;
+         cursor: pointer;
+      }
+
+      #secLine {
+         margin-left: 35%;
+         padding: 10px;
+
+      }
+
+      #rdLine {
+         display: flex;
+         margin-top: 10px;
+         height: 84px;
+         width: 100%;
+         border-top: 0.5px solid black;
+         border-bottom: 0.5px solid black;
+         /* border: 0.5px solid red; */
+         /* justify-content: space-between; */
+         gap: 200px;
+         justify-content: center;
+         align-items: center;
+
+
+      }
+
+      #rdLine>div {
+         margin-left: 60px;
+         text-align: center;
+         /* margin-bottom: 30px; */
+      }
+
+
+      #st {
+         display: flex;
+         height: 84vh;
+      }
+
+      #lef {
+         height: 90%;
+         width: 70vw;
+         overflow-y: scroll;
+         border-right: 1px solid;
+         padding: 1%;
+         margin: auto;
+      }
+
+      #lef::-webkit-scrollbar {
+         display: none;
+      }
+
+      #rig {
+         width: 30vw;
+         margin: auto;
+      }
+
+      #tt {
+         width: 75%;
+         margin: auto;
+         padding: 3% 2%;
+         border: 1px solid rgb(5, 252, 236);
+         margin-bottom: 5%;
+      }
+
+      #tt>div:first-child {
+         font-size: 18px;
+         font-weight: bold;
+         padding-top: 5%;
+         padding-bottom: 5%;
+         margin-bottom: 5%;
+         border-bottom: 1px solid rgb(224, 6, 6);
+      }
+
+      #tt>div:nth-child(2) {
+         margin-top: 5%;
+         margin-bottom: 5%;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      #tItem {
+         width: 70%;
+         text-align: right;
+         color: rgb(123, 232, 192);
+         font-weight: bold;
+      }
+
+      #tt>div:last-child {
+         margin-top: 5%;
+         margin-bottom: 5%;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      #total {
+         width: 70%;
+         text-align: right;
+         color: green;
+         font-weight: bold;
+      }
+
+      #mim {
+         width: 75%;
+         margin: auto;
+         margin-top: 3%;
+         border: 1px solid gray;
+         padding: 2%;
+         margin-bottom: 5%;
+      }
+
+      #mim>div:first-child {
+         font-size: 18px;
+         margin: 3% 0 5% 0;
+         color: rgb(8, 223, 47);
+      }
+
+      #mim>div:last-child {
+         margin-top: 3%;
+         margin-bottom: 5%;
+      }
+
+      #mim>div:last-child>span {
+         font-weight: bold;
+         color: tomato;
+      }
+
+      #promo {
+         height: 27px;
+         width: 60%;
+         padding: 1%;
+         outline: none;
+         margin-right: 5px;
+         border-radius: 5px;
+         border: 1px solid rgb(44, 10, 238);
+         color: tomato;
+         font-weight: bold;
+      }
+
+      input[type="submit"] {
+         height: 35px;
+         width: 33%;
+         border: none;
+         cursor: pointer;
+      }
+
+      #dd {
+         width: 70%;
+         margin: auto;
+         color: white;
+         border: 2px solid;
+         background-color: black;
+         font-size: 18px;
+         font-weight: bold;
+         padding: 3% 5%;
+         text-align: center;
+         margin-top: 3%;
+         margin-bottom: 5%;
+      }
+
+      #dd:hover {
+         background-color: white;
+         border: 2px solid;
+         color: black;
+         cursor: pointer;
+      }
+
+      #need {
+         width: 80%;
+         margin: auto;
+         line-height: 1.5;
+      }
+
+      #candy {
+         height: 200px;
+         display: flex;
+         border-bottom: 1px solid;
+         padding: 1%;
+         gap: 5%;
+         position: relative;
+      }
+
+      #pic {
+         height: 100%;
+      }
+
+      #about {
+         width: 50%;
+         line-height: 2;
+      }
+
+      #about>p:nth-child(1) {
+         font-weight: bold;
+      }
+
+      #about>p:nth-child(2) {
+         color: gray;
+      }
+
+      #about>p:nth-child(3) {
+         color: red;
+         font-weight: bold;
+      }
+
+      #inc {
+         padding: 0;
+         height: 40px;
+         width: 6%;
+         /* border-radius: 25px; */
+         color: black;
+         border: none;
+         background-color: rgb(234, 247, 247);
+         /* background-color: RGB(239, 239, 239); */
+         position: absolute;
+         right: 18.8%;
+         top: 9%;
+      }
+
+      #inc:hover {
+         color: white;
+         background-color: black;
+      }
+
+      #dec {
+         padding: 0;
+         height: 40px;
+         width: 6%;
+         border: none;
+         /* border-radius: 25px; */
+         color: black;
+         background-color: rgb(234, 247, 247);
+         /* background-color: RGB(239, 239, 239); */
+         position: absolute;
+         right: 5%;
+         top: 9%;
+      }
+
+      #dec:hover {
+         color: white;
+         background-color: black;
+      }
+
+      #count {
+         border: 3px solid;
+         height: 34px;
+         width: 6%;
+         border: none;
+         /* border-radius: 25px; */
+         /* font-weight: bold; */
+         background-color: rgb(241, 191, 245);
+         position: absolute;
+         right: 11.6%;
+         top: 10%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      #remove {
+         padding: 0;
+         height: 40px;
+         width: 20%;
+         border: none;
+         background-color: rgb(233, 191, 191);
+         position: absolute;
+         bottom: 10%;
+         right: 5%;
+      }
+
+      #remove:hover {
+         background-color: rgb(243, 99, 99);
+      }
+
+      #cart-head {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      #cart-head>div {
+         display: flex;
+         align-items: center;
+         justify-content: end;
+         gap: 10px;
+         font-weight: bold;
+         width: 70%;
+      }
+
+      #cart-head>div>input {
+         border: 3px solid rgb(0, 119, 255);
+         border-radius: 10px;
+         padding: 0.5% 5% 0.5% 3%;
+      }
+
+      button~p {
+         border: 3px solid rgb(0, 119, 255);
+         padding: 0.3% 1%;
+         border-radius: 10px;
+      }
+
+      #cart-head>div>button {
+         border: 3px solid rgb(0, 119, 255);
+         border-radius: 10px;
+         padding: 0.5% 2% 0.5% 2%;
+         background-color: rgb(0, 119, 255);
+         color: white;
+         font-weight: bold;
+      }
+
+      #container {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         gap: 17px;
+         width: 97%;
+         margin: auto;
+      }
+
+      #container>div {
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+
+      #container>div>img {
+         width: 100%;
+      }
+
+      img+p {
+         font-size: 12px;
+         font-weight: bold;
+      }
+
+      #container>div>div {
+         display: flex;
+         margin-left: 5%;
+         margin-top: -3%;
+         align-items: center;
+      }
+
+      #container>div>div>p {
+         margin-right: 5%;
+      }
+
+      #container>div>div>p:last-child {
+         font-size: 12px;
+         text-decoration: line-through;
+         color: rgb(152, 9, 9);
+      }
+
+      #container>div>p {
+         margin-left: 5%;
+      }
+
+      #container>div>button {
+         font-weight: bold;
+         margin-bottom: 5%;
+         margin-left: 5%;
+         padding: 1% 5%;
+         border-radius: 7px;
+         border: 3px solid tomato;
+         background-color: tomato;
+         color: white;
+      }
+
+      #container>div>div:last-of-type {
+         font-weight: bold;
+      }
+
+      #container>div>div>button {
+         border-radius: 5px;
+         border: 3px solid rgb(255, 221, 0);
+         background-color: rgb(255, 221, 0);
+         font-weight: bold;
+      }
+
+      #length {
+         display: flex;
+         height: 43px;
+         width: 100px;
+         border: 1px solid red;
+      }
+
+      #item {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-weight: bold;
+         color: royalblue;
+      }
+   </style>
+</head>
+
+<body>
+   <div id="navbar">
+      <div id="topBar">
+         <div>IN - US$</div>
+         <div id="help">Help <i class="fa-solid fa-angle-down"></i></div>
+         <div><a href="../login_signup/alreadymember.html">Sign in</a></div>
+         <div><a href="../login_signup/singup.html">Join</a></div>
+      </div>
+      <div id="bottomBar">
+         <div>
+            <div><a href="../../index.html">LYST</a></div>
+            <div id="women" class="underline"><a href="../womens/1st.html">WOMEN</a></div>
+            <div id="men" class="underline"><a href="../mens/accessories.html">MEN</a></div>
+         </div>
+         <div id="searchBar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="search" type="text" placeholder='SEARCH (E.G. "VALENTINO DRESSES")'>
+         </div>
+      </div>
+   </div>
+   <div>
+      <div>
+         <div>
+            <a href="" name="main page"></a>
+            <!-- <img id="firstImg"  src="https://www.mytheresa.com.cn/skin/frontend/mytheresa/default/images/logo.png?v=20220505T182235"/> -->
+         </div>
+         <div class="topnav">
+            <a class="active" href="#home">NEW ARRIVALS</a>
+            <a href="">CLOTHING</a>
+            <a href="">SHOES</a>
+            <a href="">BAGS</a>
+            <a href="">ACCESSORIES</a>
+            <a href="">VACATION</a>
+            <a href="">SALE</a>
+            <div class="search-container">
+               <form>
+                  <input type="text" placeholder="Search.." name="search"><i class="fa-solid fa-certificate"></i>
+                  <!-- <button type="submit"><i class="fa-duotone fa-magnifying-glass"></i></i></button> -->
+               </form>
+            </div>
+         </div>
+         <div id="secLine">For a short time only: free shipping an all orders
+         </div>
+      </div>
+   </div>
+
+   <div id="rdLine">
+      <div><i class="fa-brands fa-nutritionix"></i> &nbsp; Authentic Luxury item</div>
+      <div><i class="fa-solid fa-tags"></i> &nbsp; All inclusive Price</div>
+      <div><i class="fa-solid fa-people-pulling"></i> &nbsp; Free return within 30 days</div>
+   </div>
+
+   </div>
+
+   <!-- Modal content -->
+   <div id="helpDown">
+      <div>
+         <p><a href="../navbar/help.html">Help center</a></p>
+      </div>
+      <div>
+         <p><a href="../navbar/contact.html">Contact us</a></p>
+      </div>
+      <div>
+         <p><a href="">About us</a></p>
+      </div>
+      <div>
+         <p><a href="">Careers</a></p>
+      </div>
+   </div>
+   <div id="myModal">
+      <div id="left">
+         <h3>Hot right now</h3>
+         <div id="hot"></div>
+         <h3>Clothing form Top Brands</h3>
+         <div class="common" id="clothing">
+            <div id="c1" class="a"><i class="fa-solid fa-chevron-left"></i></div>
+            <div id="c2" class="b"><i class="fa-solid fa-chevron-right"></i></div>
+         </div>
+         <h3>Dresses from Top Brands</h3>
+         <div class="common" id="dresses">
+            <div id="d1" class="a"><i class="fa-solid fa-chevron-left"></i></div>
+            <div id="d2" class="b"><i class="fa-solid fa-chevron-right"></i></div>
+         </div>
+         <h3>Shoes from Top Brands</h3>
+         <div class="common" id="shoes">
+            <div id="s1" class="a"><i class="fa-solid fa-chevron-left"></i></div>
+            <div id="s2" class="b"><i class="fa-solid fa-chevron-right"></i></div>
+         </div>
+         <h3>Sneakers from Top Brands</h3>
+         <div class="common last" id="sneakers">
+            <div id="sn1" class="a"><i class="fa-solid fa-chevron-left"></i></div>
+            <div id="sn2" class="b"><i class="fa-solid fa-chevron-right"></i></div>
+         </div>
+      </div>
+      <div id="right">
+         <div>
+            <div><span id="close">&times;</span></div>
+         </div>
+         <div>
+            <div>Keep track of all your searches in one place</div>
+            <div id="rating">
+               <p>4.8</p>
+               <div id="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+               </div>
+               <p>5.4k+ Ratings</p>
+            </div>
+         </div>
+         <div>
+            <img
+               src="https://static.lystit.com/static/n/web/react/components/send-to-app-banner/images/lyst-mobile-devices.2f5bb3f3ccb375b9007e87c578cb9c07.png"
+               alt="">
+            <button>Download the free app</button>
+         </div>
+      </div>
+   </div>
+   <!-- cart content -->
+   <div id="st">
+      <div id="lef"></div>
+      <div id="rig">
+         <div id="tt">
+            <div>Order Summary</div>
+            <div>
+               <div>Total Item -</div>
+               <div id="tItem"></div>
+            </div>
+            <div>
+               <div>Total Price -</div>
+               <div id="total"></div>
+            </div>
+         </div>
+         <div id="mim">
+            <div>Apply Promo Code</div>
+            <form id="apply">
+               <input id="promo" type="text">
+               <input type="submit" value="APPLY">
+            </form>
+            <div>To get 30% Off, use <span>masai30</span></div>
+         </div>
+         <div id="dd">CHECKOUT</div>
+         <div id="need">
+            Need help? <br>
+            1-866-601-5105 | Email <br>
+            Shipping Policy <br>
+            Returns & Exchange
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
+<script src="../../src/navbar.js"></script>
+<script src="https://kit.fontawesome.com/ef3b2a94d1.js" crossorigin="anonymous"></script>
+
+<script>
+
+   var cont = document.querySelector('#lef');
+   var total = document.querySelector('#total');
+   var tItem = document.querySelector('#tItem');
+   var promo = document.querySelector('#promo');
+   var form = document.querySelector('#apply');
+   var checkout = document.querySelector('#dd');
+
+   // var cartLS=JSON.parse(localStorage.getItem("masaiCart")) || [];
+   var cartLSdata = JSON.parse(localStorage.getItem("add-cart")) || [];
+
+   var sum = 0;
+   var n = cartLSdata.length;
+   var c = 0;
+
+   displayDate(cartLSdata);
+
+   function displayDate(data) {
+      data.forEach(function (el, index) {
+         var count = 1;
+
+         var candy = document.createElement('div');
+         candy.id = 'candy'
+
+         var imgDiv = document.createElement('div');
+         var about = document.createElement('div');
+         about.id = 'about';
+
+         var img = document.createElement('img');
+         img.id = 'pic';
+         img.src = el.img;
+         imgDiv.append(img);
+
+         var brand = document.createElement('p');
+         brand.innerText = el.name;
+
+         var des = document.createElement('p');
+         des.innerText = el.brand;
+
+         var price = document.createElement('p');
+         price.innerText = 'INR ' + el.price;
+         sum += +(el.price);
+
+         var category = document.createElement('p');
+         category.innerText = el.productID;
+
+         about.append(brand, des, price, category);
+
+         var remove = document.createElement('button');
+         remove.innerText = 'REMOVE';
+         remove.id = 'remove';
+         remove.addEventListener('click', function () {
+            event.target.parentNode.remove();
+            data.splice(index, 1);
+            sum -= +(el.price);
+            localStorage.setItem('add-cart', JSON.stringify(cartLSdata));
+            window.location.reload();
+         })
+
+         var inc = document.createElement('button');
+         inc.innerText = '+';
+         inc.id = 'inc';
+         inc.addEventListener('click', function () {
+            n++;
+            count++;
+            sum += +(el.price);
+            tItem.innerText = n;
+            qty.innerText = count;
+            total.innerText = sum;
+         })
+
+         var qty = document.createElement('div');
+         qty.innerText = count;
+         qty.id = 'count'
+
+         var dec = document.createElement('button');
+         dec.innerText = '-';
+         dec.id = 'dec';
+         dec.addEventListener('click', function () {
+            if (count > 1) {
+               n--;
+               count--;
+               sum -= +(el.price);
+               tItem.innerText = n;
+               qty.innerText = count;
+               total.innerText = sum;
+            }
+         })
+
+
+         total.innerText = sum;
+         tItem.innerText = n;
+
+         candy.append(imgDiv, about, inc, qty, dec, remove);
+         cont.append(candy);
+      })
+   }
+
+   form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      c++;
+      if (promo.value == 'masai30' && c == 1) {
+         sum -= sum * 0.3;
+         total.innerText = sum;
+      }
+   })
+
+   dd.onclick = function () {
+      window.location.href = '../cart/payment.html'
+   }
+
+</script>
