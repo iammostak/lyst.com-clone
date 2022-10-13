@@ -26,9 +26,9 @@ We, a group of 5 members, have finished this project and have built a clone of a
 
 > ## **Tech Stacks Used ›**
 
-- **React**
+- **HTML**
 - **CSS**
-- **React Router**
+- **JavaScript**
 
 <p>
    <img src="https://img.icons8.com/color/64/000000/html-5.png"/>
